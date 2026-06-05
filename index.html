@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OkazjoFly - tanie loty i wakacje</title>
+  <meta name="description" content="OkazjoFly znajduje najlepsze okazje podróżnicze, tanie loty, hotele i wakacje dopasowane do Twojego budżetu." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#" class="brand">
+        <img src="assets/okazjofly-logo-social.png" alt="OkazjoFly logo">
+        <span>Okazjo<span>Fly</span></span>
+      </a>
+      <nav>
+        <a href="#okazje">Okazje</a>
+        <a href="#jak">Jak to działa</a>
+        <a href="#formularz">Skomponuj wyjazd</a>
+      </nav>
+      <a class="btn small" href="#formularz">Znajdź wyjazd</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">Okazje, które Cię zabiorą</p>
+          <h1>Tanie loty i wakacje dopasowane do Twojego budżetu</h1>
+          <p class="lead">Nie trać godzin na szukanie. OkazjoFly wyszukuje najlepsze loty, noclegi i gotowe pomysły na wyjazd.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#formularz">Skomponuj swój wyjazd</a>
+            <a class="btn ghost" href="#okazje">Zobacz okazje</a>
+          </div>
+          <div class="trust">
+            <span>🔎 Szukamy za Ciebie</span>
+            <span>🏷️ Najlepsze okazje</span>
+            <span>🛡️ Sprawdzone i bezpieczne</span>
+          </div>
+        </div>
+        <div class="hero-card">
+          <img src="assets/okazjofly-banner.png" alt="OkazjoFly baner podróżniczy">
+        </div>
+      </div>
+    </section>
+
+    <section class="features" id="jak">
+      <div class="container">
+        <h2>Jak działa OkazjoFly?</h2>
+        <div class="feature-grid">
+          <div class="feature">
+            <div class="icon">1</div>
+            <h3>Podajesz budżet</h3>
+            <p>Mówisz nam gdzie chcesz lecieć, kiedy, z kim i ile chcesz wydać.</p>
+          </div>
+          <div class="feature">
+            <div class="icon">2</div>
+            <h3>Szukamy okazji</h3>
+            <p>Sprawdzamy loty, noclegi, terminy i najlepsze kombinacje cenowe.</p>
+          </div>
+          <div class="feature">
+            <div class="icon">3</div>
+            <h3>Dostajesz plan</h3>
+            <p>Otrzymujesz gotową propozycję wyjazdu z linkami do rezerwacji.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="deals" id="okazje">
+      <div class="container">
+        <div class="section-top">
+          <h2>Najnowsze okazje</h2>
+          <p>Przykładowe kierunki, które możemy dla Ciebie wyszukać.</p>
+        </div>
+        <div class="deal-grid">
+          <article class="deal">
+            <div class="deal-img malta"></div>
+            <h3>Malta</h3>
+            <p>City break / wakacje</p>
+            <strong>od 349 zł</strong>
+          </article>
+          <article class="deal">
+            <div class="deal-img rome"></div>
+            <h3>Rzym</h3>
+            <p>Weekend we Włoszech</p>
+            <strong>od 249 zł</strong>
+          </article>
+          <article class="deal">
+            <div class="deal-img greece"></div>
+            <h3>Grecja</h3>
+            <p>Słońce i plaże</p>
+            <strong>od 799 zł</strong>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="form-section" id="formularz">
+      <div class="container form-grid">
+        <div>
+          <p class="eyebrow">Skomponuj swoją ofertę</p>
+          <h2>Znajdziemy wyjazd specjalnie dla Ciebie</h2>
+          <p>Wypełnij formularz, a my sprawdzimy najlepsze opcje lotów, hoteli i terminów w Twoim budżecie.</p>
+          <ul class="checklist">
+            <li>tanie loty</li>
+            <li>noclegi</li>
+            <li>gotowe linki do rezerwacji</li>
+            <li>propozycja dopasowana do budżetu</li>
+          </ul>
+        </div>
+
+        <form class="form" action="https://formsubmit.co/okazjofly@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="Nowe zapytanie z OkazjoFly">
+          <input type="hidden" name="_captcha" value="false">
+          <label>Imię
+            <input name="Imię" type="text" placeholder="np. Dawid" required>
+          </label>
+          <label>Email
+            <input name="Email" type="email" placeholder="twoj@email.com" required>
+          </label>
+          <label>Kierunek
+            <input name="Kierunek" type="text" placeholder="np. Hiszpania, Grecja, gdziekolwiek">
+          </label>
+          <label>Termin
+            <input name="Termin" type="text" placeholder="np. 10-17 sierpnia">
+          </label>
+          <label>Budżet
+            <input name="Budżet" type="text" placeholder="np. do 2500 zł za 2 osoby">
+          </label>
+          <label>Wiadomość
+            <textarea name="Wiadomość" placeholder="Napisz liczbę osób, lotnisko wylotu i wymagania"></textarea>
+          </label>
+          <button class="btn" type="submit">✈️ Wyślij zapytanie</button>
+          <p class="small-note">Na start formularz wysyła wiadomości na okazjofly@gmail.com. Możesz potem zmienić adres w kodzie.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <strong>OkazjoFly</strong>
+      <span>© 2026 — Tanie loty i wakacje</span>
+    </div>
+  </footer>
+</body>
+</html>
